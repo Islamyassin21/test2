@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.example.islam.sendemail.MainActivity">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"></include>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_below="@+id/app_bar"
+        android:layout_width="320dp"
+        android:layout_height="370dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/choose"
+                style="@style/contactTextView"
+                android:layout_width="190dp"
+                android:layout_height="45dp"
+                android:background="#605958"
+                android:gravity="center"
+                android:text="Choose Email..."
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/choose"
+                android:layout_marginTop="15dp"
+                android:text="To:"
+                android:textSize="25sp" />
+
+            <ScrollView
+                android:id="@+id/scrollEmail"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/to">
+
+                <TextView
+                    android:id="@+id/Email"
+                    style="@style/contactTextView"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/choose"
+                    android:gravity="start"
+                    android:text=""
+                    android:textSize="18sp" />
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollEmail"
+                android:layout_marginTop="10dp"
+                android:text="Subject:"
+                android:textSize="19sp" />
+
+            <ScrollView
+                android:id="@+id/scrollsubject"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject">
+
+                <EditText
+                    android:id="@+id/subject_title"
+                    style="@style/contactTextView"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Email"
+                    android:gravity="start"
+                    android:text="Android Developer" />
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/title_messege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollsubject"
+                android:layout_marginTop="10dp"
+                android:text="Messege:"
+                android:textSize="19sp" />
+
+            <ScrollView
+                android:id="@+id/scrollmessege"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_messege">
+
+                <EditText
+                    android:id="@+id/messege"
+                    style="@style/contactTextView"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
+
+            <Button
+                android:id="@+id/attachfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollmessege"
+                android:text="Attach File" />
+
+            <TextView
+                android:id="@+id/attachfilename"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/scrollmessege"
+                android:layout_marginLeft="110dp"
+                android:layout_marginTop="7dp"
+                android:text="my attach file"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll"
+        android:layout_marginTop="5dp"
+
+        android:text="SEDN"
+        android:textSize="19sp" />
+</RelativeLayout>

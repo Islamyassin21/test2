@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Send Email</string>
+    <string name="send_to">send Email</string>
+
+    <string-array name="chooseEmail">
+        <item>All Email</item>
+        <item>Custum Email</item>
+        <item>Add New</item>
+    </string-array>
+</resources>
